@@ -1,33 +1,22 @@
-form{
-    margin-top: 50px;
-    transition: all 4s ease-in-out;
-}
-
-.form-control{ 
-    width: 600px;
-    background: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid gray;
-    color: black;
-    font-size: 18px;
-    margin-bottom: 16px;
-}
-input{
-    height: 45px;
-}
-form .submit{
-    background:black;
-    border-color: transparent;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    height: 50px;
-    margin-top: 20px;
-
-}
-form .submit:hover{
-    background-color: grey;
-    cursor: pointer;
-}
+body{
+    font: 20px Verdana;
+   }
+   
+   h1{
+    font: 20px Verdana;
+    color: red;
+   }
+   
+   .Input{
+    font: 20px Verdana;
+    border: 1px solid orange;
+    width: 300px;
+   }
+   
+   .Submit{
+    font: 20px Verdana;
+    border: 1px solid orange;
+    width: 300px;
+   }
+   
+   

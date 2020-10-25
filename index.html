@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>contact form</title>
-        <link rel="stylesheet" type="text/css" href="f_style.css">
-    </head>
-    <body>
-        <div class="contact-form">
-            <form id="contact-form" method="post" action="form.php">
-                <input name="name" type="text" class="form-control" placeholder="your name" required><br>
-                <input name="email" type="email" class="form-control" placeholder="your email" required><br>
-                <textarea name="message" class="form-control" placeholder="message" row="4" required></textarea><br>
-                <input type="submit" class="form-control submit" value="send message">
 
-            </form>
-        </div>
-    </body>
+ <head>
+  <link rel="stylesheet" href="f_style.css" type="text/css">
+ </head>
+
+ <body>
+
+  <form action="" method="POST">
+
+   <label> Name: 
+    <input type="text" name="Name" class="Input" style="width: 225px" required>
+   </label>
+   <br><br>
+   <label> Comment: <br>
+    <textarea name="Comment" class="Input" style="width: 300px" required></textarea>
+   </label>
+   <br><br>
+   <input type="submit" name="Submit" value="Submit Comment" class="Submit">
+
+  </form>
+
+ </body>
+
 </html>
+        

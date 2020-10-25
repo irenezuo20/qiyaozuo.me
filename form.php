@@ -1,18 +1,26 @@
 <?php
-    $name=$_POST['name'];
-    $visitor_email=$_POST['email'];
-    $message=$_POST['message'];
+ 
+ if($_POST['Submit']){
+  print "<h1>Your comment has been submitted!</h1>";
 
-    $email_from='baekainmybed@163.com';
-    $email_subject="new form submission";
-    $email_body="User Name: $name.\n".
-                "User Email: $visitor_email.\n".
-                "User Message: $message.\n";
+  $Name = $_POST['Name'];
+  $Comment = $_POST['Comment'];
 
-    $to ="qiyao.zuo.gr@dartmouth.edu";
-    $headers="From: $email_from \r\n";
-    mail($to,$email_subject,$email_body,$headers);
-    header("Location:index.html");
+  #Get old comments
+  $old = fopen("comments.txt", "r+t");
+  $old_comments = fread($old, 1024);
 
+  #Delete everything, write down new and old comments
+  $write = fopen("comments.txt", "w+");
+  $string = "<b>".$Name."</b><br>".$Comment."<br>\n".$old_comments;
+  fwrite($write, $string);
+  fclose($write);
+  fclose($old);
+ }
+
+ #Read comments
+ $read = fopen("comments.txt", "r+t");
+ echo "<br><br>Comments<hr>".fread($read, 1024);
+ fclose($read);
 
 ?>
