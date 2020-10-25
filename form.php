@@ -12,7 +12,7 @@
     $to ="qiyao.zuo.gr@dartmouth.edu";
     $headers="From: $email_from \r\n";
     mail($to,$email_subject,$email_body,$headers);
-    header("Location:form.html");
+    header("Location:index.html");
 
 
 ?>
