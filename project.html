@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Video</title>
+    <link rel="stylesheet" href="./css/p_style.css">
+</head>
+<body>
+    <header>
+        <div class="navi">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li class="active"><a href="project.html">PROJECT</a></li>
+            <li><a href="gala.html">GALLARY</a></li>
+            <li><a href="transition.html">CONTACT ME</a></li>     
+          </ul>    
+        </div>           
+    </header>
+    <div class="container">
+        <h1>My Project Videos</h1>
+        <div class="border"></div>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="images/vid1.png" width="100%">
+                    <img src="images/button.png" class="play-btn" onclick="playVideo('./images/vid1.mp4')">
+                </div>
+                <p>A multiuser studio with whiteboard</p>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="./images/vid2.png">  
+                        <img src="images/button.png" class="play-btn" onclick="playVideo('./images/vid2.mp4')">
+         
+                    </div>
+                    <p> VR drum set</p>       
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="./images/vid3.png">   
+                        <img src="images/button.png" class="play-btn" onclick="playVideo('./images/vid3.mp4')">
+        
+                    </div>
+                    <p>Balloon and bowling ball</p>       
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="./images/vid4.png">   
+                        <img src="images/button.png" class="play-btn" onclick="playVideo('./images/vid4.mp4')">
+        
+                    </div>
+                    <p>Simple walking cycle</p>       
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+            <source src="images/vid1.mp4" type="video/mp4">
+        </video>
+        <img src="images/close.png" class="close-btn" onclick="stopVideo()">
+    </div>
+
+    <script>
+        var videoPlayer=document.getElementById("videoPlayer");
+        var myVideo=document.getElementById("myVideo");
+
+        function stopVideo(){
+            videoPlayer.style.display="none";
+        }
+        function playVideo(file){
+            myVideo.src=file;
+            videoPlayer.style.display="block";
+        }
+
+    </script>
+
+</body>
+</html>

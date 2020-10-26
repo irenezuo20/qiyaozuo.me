@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to bottom, rgb(177, 172, 162), rgb(244, 244, 244));
+    font-family: sans-serif;
+}
+
+.border{
+    width: 180px;
+    height: 4px;
+    background: #333;
+    margin: 0px auto;
+}
+.container{
+    width: 80%;
+    margin: 10px auto;
+
+}
+.container h1{
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 5%;    
+    text-transform: uppercase;
+    color: rgb(41, 40, 40);
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.col{
+    flex-basis: 50%;
+    min-width: 250px;
+}
+.col p{
+    text-align: center;    
+    color: #707070;
+    padding-top: 2%;
+    line-height: 22px;
+    font-size: 18px;
+    font-family: serif;
+
+}
+.feature-img{
+    width: 83%;
+    margin: auto;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.small-img-row{
+    display: flex;
+    background: #efefef;
+    margin: 20px 0;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 85%;
+}
+.small-img{
+    position: relative;
+}
+.small-img img{
+    width: 150px;
+}
+.small-img-row p{
+    margin-left: 20px;
+    color: #707070;
+    line-height: 22px;
+    font-size: 15px;
+}
+.play-btn{
+    width: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.small-img .play-btn{
+    width: 35px;
+}
+
+.video-player{
+    width: 50%;    
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+video:focus{
+    outline: none;
+}
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width:30px;
+    cursor: pointer;
+}
+header{
+    height: 9.5vh;
+    background-size: cover;
+    background-position: center;
+    background-color:black;
+    
+  }
+  
+  ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+  }
+  
+  ul li{
+    display: inline-block;
+  }
+  
+  ul li a{
+    text-decoration:  none;
+    color:grey;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+  }
+  
+  ul li a:hover{
+    background-color: #fff;
+    color: #000;
+  
+  }
+  ul li.active a{
+    background-color: #fff;
+    color: #000;
+  } 

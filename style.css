@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.s1 {
+  background-image: url("./img/bg.jpg");
+  background-size: cover;
+}
+.section h1 {
+  font-size: 64px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background: linear-gradient(to left, rgb(0, 42, 70), rgb(0, 46, 38));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h4{
+  font-family: serif;
+  text-align: center;
+  color: #808083;
+}
+.sec2 {
+  background: #000;
+  height: 76%;
+}
+.s2 h1 {
+  top:7%;
+  font-size: 48px;
+  background: linear-gradient(to left, #404042, #373838);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.s3{
+  background-image: url("./img/sec3.jpg");
+  background-size: cover;
+}
+
+
+.chair {
+  height:68%;
+  position: absolute;
+  top: 58%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.description {
+  padding-top: 0.5%;
+  margin-top: 10%;
+  width: 32%;
+  margin-left: 10%;
+  font-size: 20px;
+  font-family: serif;
+  transform: translate(40%, 0);
+  
+}
+.description p {
+  margin: 50px 50px;
+  color: rgb(159, 159, 159);
+  line-height: 30px;
+}
+
+header{
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+ul{
+  float: right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+ul li{
+  display: inline-block;
+}
+
+ul li a{
+  text-decoration:  none;
+  color:grey;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+}
+
+ul li a:hover{
+  background-color: #fff;
+  color: #000;
+
+}
+ul li.active a{
+  background-color: #fff;
+  color: #000;
+} 
+
+
+iframe {
+  height: 50%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.row{
+  position: absolute;
+  left: 12%;
+  top: 40%;
+}
+
+.colume{
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,2fr));
+  min-height: 20vh;
+}
+
+
+
+.img-container img{
+  width: 55%;
+  object-fit: auto;
+  transition: all 0.3s ease-out;
+}
+.img-container img:hover{
+  transform: scale(1.2);
+}
+
+h3{
+  font-size: medium;
+  position: relative;
+  top:10%;
+  left: 10%;
+}
+.cs{
+  position: relative;
+  left: 12%;
+}
+.xr{
+  position: relative;
+  left: 6%;
+}
+.da{
+  position: relative;
+  left: 14%;
+
+}
+h2{
+  font-family: serif;
+  text-align: center;
+  margin-top: -5%;
+  color: #808083;
+}
+
+.highway{
+  height: 290px;
+  width: 500%;
+  display: block;
+  background-image: url("./images/cloud.jpg");
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-repeat: repeat-x;
+  animation: cloud 5s linear infinite;
+}
+@keyframes cloud{
+  100%{
+    transform: translateX(-3400px);
+  }
+}
